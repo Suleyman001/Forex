@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="lecture.forex.controller.PositionController"
+      spacing="15" alignment="center" style="-fx-padding: 20; -fx-background-color: #f4f4f4;">
+    <Label text="Opened Positions" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <TableView fx:id="positionsTable" prefWidth="400" prefHeight="200">
+        <columns>
+            <TableColumn fx:id="currencyPairColumn" text="Currency Pair" prefWidth="150"/>
+            <TableColumn fx:id="directionColumn" text="Direction" prefWidth="100"/>
+            <TableColumn fx:id="quantityColumn" text="Quantity" prefWidth="150"/>
+        </columns>
+    </TableView>
+</VBox>

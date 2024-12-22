@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="lecture.forex.controller.PositionController"
+      spacing="15" alignment="center" style="-fx-padding: 20;">
+
+    <Label text="Forex Trading Application" style="-fx-font-size: 24px;" />
+
+    <ComboBox fx:id="currencyPairDropdown" promptText="Select a Currency Pair" />
+    <TextField fx:id="quantityField" promptText="Enter Quantity" />
+    <ComboBox fx:id="directionDropdown" promptText="Select Direction" />
+
+    <Button text="Open Position" onAction="#positionOpeningAction" />
+    <Button text="Close Position" onAction="#positionClosingAction" />
+    <Button text="View Opened Positions" onAction="#openedPositionsAction" />
+
+    <Label fx:id="resultLabel" />
+</VBox>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="lecture.forex.controller.PositionController"
+      spacing="15" alignment="center" style="-fx-padding: 20;">
+    <Label text="Open a Position" style="-fx-font-size: 18px;" />
+    <ComboBox fx:id="currencyPairDropdown" promptText="Select Currency Pair" />
+    <TextField fx:id="quantityField" promptText="Enter Quantity" />
+    <ComboBox fx:id="directionDropdown" promptText="Select Direction" />
+    <Button text="Submit" onAction="#positionOpeningAction" />
+    <Label fx:id="resultLabel" style="-fx-text-fill: red;" />
+</VBox>
